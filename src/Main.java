@@ -32,11 +32,19 @@ public class Main {
         Vet v1 =  new Vet("ayse", "456","Sakarya Universitesi",10);
         Vet v2 =  new Vet("mehmet", "7416","Kocaeli Universitesi",15);
 
+        v1.addCustomer(c1);
+        v2.addCustomer(c2);
+
+        v1.listCustomers();
+
         /*
         System.out.println(v1);
         v2.introduceYourself();
         */
 
+        System.out.println("Yönetim Paneli");
+        ManagementPanel<Customer> customerManagementPanel = new ManagementPanel<>();
+        customerManagementPanel.showInformation(c1);
     }
 
 }

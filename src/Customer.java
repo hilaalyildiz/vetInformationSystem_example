@@ -16,6 +16,12 @@ public class Customer extends Person {
         System.out.println(animal+getName()+" added cat to client");
     }
 
+    public void listYourAnimals(){
+        for(Animal a: customersAnimals){
+            System.out.println(a);
+        }
+    }
+
     @Override
     void introduceYourself() {
         System.out.println(this.toString()+" I'm a customer");
